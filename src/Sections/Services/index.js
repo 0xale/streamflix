@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Tube from "../../assets/3dtube.png";
 import Cone from "../../assets/3dtriangle.png";
 import Capsule from "../../assets/3dcapsule.png";
+import Remote from "../../assets/337.png";
 
 import TextBlock from "../../components/TextBlock";
 import SvgBlock from "../../components/SvgBlock";
@@ -337,7 +338,9 @@ const Services = () => {
         <OBJ>
           <img src={Tube} alt="Tube Object" width="400" height="400" />
         </OBJ>
-        <SvgBlock svg="Design.svg" />
+        {/* <SvgBlock svg="Design.svg" />
+         */}
+        {/* <img src={Remote} alt="remote" width="100" height="100" /> */}
       </Content>
       <Content ref={addToRefs}>
         <TextBlock

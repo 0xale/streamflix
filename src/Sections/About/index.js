@@ -139,10 +139,10 @@ const About = () => {
             </Human>
 
             <Text>
-              We help our customers to tell about themselves, to grow and stand
-              out in an increasingly competitive digital world, through creative
-              projects that are able to attract and involve, creating strategic
-              value.
+              We’re building the future of gaming entertainment where you can
+              come together to watch, stream, and play. Streamflix, is a virtual world
+              for communities where you can be anything and anyone you want to
+              be.
             </Text>
             <div>
               <Circle style={{ backgroundColor: "var(--purple)" }} />

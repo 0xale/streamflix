@@ -191,11 +191,12 @@ const HeroSection = () => {
         <Lb id="leftBlock">
           <Topic>
             <Circle />
-            <span>We Build Web</span>
+            <span>We Build Web3</span>
           </Topic>
-          <Title>Transforming your digital presence</Title>
+          <Title>Future of Decentralize Streams</Title>
           <SubText>
-            we help fast growing companies build award winning websites
+            We are building the social experience platform for the virtual world
+            and we invite you to come join the revolution!
           </SubText>
           <CTA>
             Get in touch &nbsp;
