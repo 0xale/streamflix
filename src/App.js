@@ -1,15 +1,15 @@
 import { GlobalStyle } from "./globalStyles";
 import { lazy, Suspense } from "react";
-import { WagmiConfig, createClient,  } from "wagmi";
+import { WagmiConfig, createClient } from "wagmi";
 import {
   ConnectKitProvider,
   ConnectKitButton,
   getDefaultClient,
 } from "connectkit";
+import { useContract, useProvider } from "wagmi";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
-
+import streamflix from "./artifacts/contracts/streamflix.sol/streamflix.json";
 
 import Stream from "./components/Stream/Stream";
 import Video from "./components/Video/Video";
@@ -22,7 +22,7 @@ const ScrollToTop = lazy(() => import("./components/ScrollToTop/index"));
 
 const alchemyId = "9QMrOi1t8Ake6oca7adryiKx9HMW9Qmb";
 
-const chains = [goerli, polygonMumbai]
+const chains = [goerli, polygonMumbai];
 
 const client = createClient(
   getDefaultClient({
@@ -32,9 +32,8 @@ const client = createClient(
   })
 );
 
-
 function App() {
-  const chains =[goerli,polygonMumbai]
+  const chains = [goerli, polygonMumbai];
   return (
     <>
       <WagmiConfig client={client}>
